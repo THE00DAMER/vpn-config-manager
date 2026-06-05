@@ -70,7 +70,7 @@ Workflow:
 Run installer:
 
 ```bash
-bash <(curl -fsSL https://github.com/THE00DAMER/vpn-config-manager/blob/main/install.sh)
+bash <(curl -fsSL https://raw.githubusercontent.com/THE00DAMER/vpn-config-manager/refs/heads/main/install.sh)
 ```
 
 Installer will ask for:
