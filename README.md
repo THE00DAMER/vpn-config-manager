@@ -163,7 +163,7 @@ Create bot service:
 ```bash
 sudo tee /etc/systemd/system/tg_bot.service > /dev/null <<EOF
 [Unit]
-Description=AMVFX Telegram Bot
+Description=Damer Telegram Bot
 After=network.target
 
 [Service]
