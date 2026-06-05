@@ -70,7 +70,7 @@ Workflow:
 Run installer:
 
 ```bash
-sudo bash -c "$(curl -fsSL https://raw.githubusercontent.com/ardyesp/DLO-138/main/install.sh)"
+sudo bash -c "$(curl -fsSL https://github.com/THE00DAMER/vpn-config-manager/blob/main/install.sh)"
 ```
 
 Installer will ask for:
@@ -109,9 +109,9 @@ sudo apt install -y nginx php-fpm php-curl python3-venv python3-pip ufw curl wge
 ## 3. Clone Repository
 
 ```bash
-git clone https://github.com/ardyesp/DLO-138.git
+git clone https://github.com/THE00DAMER/vpn-config-manager.git
 
-cd DLO-138
+cd vpn-config-manager
 ```
 
 ## 4. Create Project Directories
