@@ -1,6 +1,6 @@
-# AMVFX VPN Config Management
+# VPN Config Management
 
-A lightweight, production-ready VPN configuration sales system that combines a Telegram bot, web admin panel, and JSON datastore to automate payment verification and configuration delivery.
+Production-ready VPN configuration management system with Telegram bot, admin panel, automated order processing, payment verification, and config delivery.
 
 ## Features
 
