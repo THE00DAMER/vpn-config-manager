@@ -1,5 +1,5 @@
 #!/bin/bash
-# AMVFX CONFIG - AUTOMATED SETUP SCRIPT (V6 - Complete & Final)
+# AMVFX CONFIG - AUTOMATED SETUP SCRIPT (V6 - Complete & Final - BugFixed)
 
 GREEN='\033[0;32m'
 BLUE='\033[0;36m'
@@ -95,7 +95,8 @@ except Exception as e:
 
 Path(RECEIPTS_DIR).mkdir(parents=True, exist_ok=True)
 
-if not BOT_TOKEN or BOT_TOKEN == "__BOT_TOKEN__":
+# ---> باگ اینجا اصلاح شد <---
+if not BOT_TOKEN or BOT_TOKEN.startswith("__"):
     logger.error("❌ BOT_TOKEN not configured!")
     exit(1)
 
@@ -678,7 +679,7 @@ server {
     root /var/www/vpn_project/public_html;
     index index.php index.html;
     location / { try_files \$uri \$uri/ /index.php?\$query_string; }
-    location ~ \\.php\$ {
+    location ~ \.php\$ {
         include snippets/fastcgi-php.conf;
         fastcgi_pass unix:$PHP_SOCK;
     }
