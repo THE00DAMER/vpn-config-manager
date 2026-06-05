@@ -16,7 +16,7 @@ if [ "$EUID" -ne 0 ]; then
   exit 1
 fi
 
-read -p "🌐 Enter your subdomain (e.g., panel.amvfx8.shop): " DOMAIN
+read -p "🌐 Enter your subdomain (e.g., yourdomain.com): " DOMAIN
 read -p "🤖 Enter Telegram Bot Token: " BOT_TOKEN
 read -p "👨‍💻 Enter Admin Chat IDs (comma separated, e.g., 123456,789012): " ADMIN_IDS
 read -s -p "🔑 Enter a secure password for Web Panel: " PANEL_PASS
